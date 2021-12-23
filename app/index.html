@@ -9,16 +9,6 @@
     <title>{{document.title}}</title>
 </head>
 <body>
-    <div class="header">
-        <div class="header__blue-line"></div>
-        <div class="header__github">
-            <a href="{{header.github.link}}" target="_blank">
-                <span class="header__github__logo icon icon--github-logo"></span>
-                <span class="header__github__caption">{{header.github.caption}}</span>
-            </a>
-        </div>
-        <div class="header__date">{{header.date}}</div>
-    </div>
     <div class="container-fluid page">
         <div class="row">
             <div class="page__left page__left--dark col-xs-5">
@@ -39,10 +29,6 @@
                         <div class="contact">
                             <h4 class="contact__title">{{contact.item3.caption}}:</h4>
                             <div class="contact__data">{{contact.item3.data}}</div>
-                        </div>
-                        <div class="contact">
-                            <h4 class="contact__title">{{contact.item4.caption}}:</h4>
-                            <div class="contact__data">{{contact.item4.data}}</div>
                         </div>
                     </div>
                 </div>
@@ -75,6 +61,14 @@
                                     <h4 class="skills__item-title">{{skills.item6.subject}}</h4>
                                     <div class="skills__item-bar {{skills.item6.mark}}"></div>
                                 </li>
+								<li>
+                                    <h4 class="skills__item-title">{{skills.item7.subject}}</h4>
+                                    <div class="skills__item-bar {{skills.item7.mark}}"></div>
+                                </li>
+								<li>
+                                    <h4 class="skills__item-title">{{skills.item8.subject}}</h4>
+                                    <div class="skills__item-bar {{skills.item8.mark}}"></div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -89,10 +83,6 @@
                     <p class="language">
                         <span class="language__label">{{lang.data.lang2.caption}}:</span>
                         <span class="language__level">{{lang.data.lang2.level}}</span>
-                    </p>
-                    <p class="language">
-                        <span class="language__label">{{lang.data.lang3.caption}}:</span>
-                        <span class="language__level">{{lang.data.lang3.level}}</span>
                     </p>
                 </div>
             </div>
@@ -191,13 +181,9 @@
                                 <div class="interests__icon icon {{interests.item2.icon}}"></div>
                                 <span class="interests__title">{{interests.item2.caption}}</span>
                             </li>
-                            <li>
+							<li>
                                 <div class="interests__icon icon {{interests.item3.icon}}"></div>
                                 <span class="interests__title">{{interests.item3.caption}}</span>
-                            </li>
-                            <li>
-                                <div class="interests__icon icon {{interests.item4.icon}}"></div>
-                                <span class="interests__title">{{interests.item4.caption}}</span>
                             </li>
                         </ul>
                     </div>

@@ -1,173 +1,157 @@
 var dateformat = require("dateformat");
 
-var date = dateformat(new Date(), 'dd.mm.yyyy');
+var date = dateformat(new Date(), 'yyyy');
 
 module.exports = {
     document: {
-        title: "Bernard Keen"
-    },
-    header: {
-        github:{
-            caption: `github.com/frontant/cv-template`,
-            link: 'https://github.com/frontant/cv-template'
-        },
-        date: 'City, ' + date
+        title: "Eric MOREL"
     },
     contact: {
         title: 'Contact',
         item1: {
-            caption: 'Mobile',
-            data: '+123 45 67 89 00'
+            caption: 'Téléphone ',
+            data: '06 19 70 70 09'
         },
         item2: {
-            caption: 'E-Mail',
-            data: '<a href="mailto:bernard.keen@example.com?subject=Request">bernard.keen@example.com</a>'
+            caption: 'E-Mail ',
+            data: '<a href="mailto:eric.morel35@gmail.com?subject=Contact">eric.morel35@gmail.com</a>'
         },
         item3: {
-            caption: 'Websites',
-            data: `<a href="https://github.com" target="_blank">https://github.com</a>`
-        },
-        item4: {
-            caption: 'Address',
-            data: `Example Street<br>12345 City`
+            caption: 'Adresse ',
+            data: `6 rue des forgerons<br>35410 Nouvoitou`
         }
     },
     skills: {
-        title: 'Skills',
+        title: 'Compétences',
         item1:{
-            subject: 'Html',
+            subject: 'Java (Spring, Tomcat, Maven, Mockito), Kotlin',
             mark: 'skills__item-bar--very-good'
         },
         item2:{
-            subject: 'Css',
-            mark: 'skills__item-bar--good'
+            subject: 'IDE (Eclipse et IntelliJ)',
+            mark: 'skills__item-bar--average'
         },
         item3:{
-            subject: 'Photoshop',
-            mark: 'skills__item-bar--average'
-        },
-        item4:{
-            subject: 'Javascript',
+            subject: 'REST, SOAP',
             mark: 'skills__item-bar--very-good'
         },
+        item4:{
+            subject: 'Intégration continue (GitlabCI et Jenkins)',
+            mark: 'skills__item-bar--good'
+        },
         item5:{
-            subject: 'Php',
-            mark: 'skills__item-bar--average'
+            subject: 'Bases de données (Oracle, MongoDB, MariaDB)',
+            mark: 'skills__item-bar--good'
         },
         item6:{
+            subject: 'Système (Linux, Windows)',
+            mark: 'skills__item-bar--good'
+        },
+		item7:{
+            subject: 'Docker',
+            mark: 'skills__item-bar--good'
+        },
+		item8:{
             subject: 'Git',
             mark: 'skills__item-bar--good'
         }
     },
     lang: {
-        title: 'Languages',
+        title: 'Langages',
         data: {
             lang1: {
-                caption: 'English',
-                level: 'Mother tongue'
+                caption: 'Français ',
+                level: 'langue maternelle'
             },
             lang2: {
-                caption: 'German',
-                level: 'Full professional proficiency'
-            },
-            lang3: {
-                caption: 'Spanish',
-                level: 'Basic knowledge'
+                caption: 'Anglais ',
+                level: 'technique'
             }
         }
     },
     aboutMe: {
-        firstName: 'Bernard',
-        lastName: 'Keen',
-        position: 'Web Developer',
-        summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Id non, fugit saepe reiciendis cumque sit magnam officiis veniam
-        iusto <span class='generic-content-container__highlight'>voluptatum</span>
-        aut dolores <span class='generic-content-container__highlight'>perspiciatis</span>
-        autem <span class='generic-content-container__highlight'>sapiente</span>
-        totam, reprehenderit, vero sunt culpa!`
+        firstName: 'Eric',
+        lastName: 'Morel',
+        position: 'Développeur Java/JEE',
+        summary: `Développeur avec 14 ans d'expérience en quête d'une mission permettant de devenir leader technique. Je suis passioné par les nouvelles technologies et l'apprentissage de nouvelles pratiques. J'aime le travail en équipe.`
     },
     experience:{
-        title : 'Experience',
+        title : 'Expériences',
         item1: {
             period: {
-                start: 2017,
-                end: 2018,
+                start: 2012,
+                end: date,
             },
-            location: 'Sydney, AU',
-            firm: 'Ino-Tech Ficional ',
-            position: 'Junior Web Front End Developer',
-            summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Id non, fugit saepe reiciendis cumque sit magnam officiis veniam.`
+            location: 'Cesson Sévigné',
+            firm: 'SII',
+            position: 'Développeur Java',
+            summary: `- 4 missions pour la TV d\'Orange France sur des technologies très différentes : JEE/Spring, Shell, Dojo<br>
+			Accompagnement d'alternants dans le cadre de refonte technique d'applications avec migration vers Java 11 (séparation back/front)<br>
+			- 1 mission pour OBS (Développement full stack sur des applicatifs permettant la gestion de ressources réseaux)<br>
+			- 3 missions en prestation pour Sopra Steria avec SII : sur le plateau Canal+, pour Edelia (filiale d'EDF) et dans les locaux de SFR à Rennes (MEP d'applicatif et astreintes le week end).<br>
+			`
         },
-        item2: {
+		item2: {
             period: {
-                start: 2016,
-                end: 2017,
+                start: 2010,
+                end: 2012,
             },
-            location: 'San José, US',
-            firm: 'Ficional Teco',
-            position: 'Junor UX Developer',
-            summary: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Quam, incidunt perspiciatis, esse eos asperiores repudiandae porro
-            nulla fugit quidem amet tenetur neque beatae?`
+            location: 'Orvault',
+            firm: 'Accenture Technologies Solutions',
+            position: 'Développeur Java',
+            summary: `Développeur Back et Front sur le projet Quartzi permettant le rapprochement des SI de Vinci et Cegelec<br>
+			Accueil et assistance d'un alternant sur le projet`
         },
-        item3: {
-            period: {
-                start: 2016,
-                end: 2013,
+		item3: {
+			period: {
+                start: 2007,
+                end: 2010,
             },
-            location: 'Berlin, DE',
-            firm: 'Audi AG',
-            position: 'Student Employee',
-            summary: `Lorem ipsum, dolor sit amet consectetur adipisicing elit
-            Quam, incidunt perspiciatis, esse eos asperiores repudiandae porro
-            nulla fugit quidem amet.`
-        }
+            location: 'Vannes',
+            firm: 'SAB Ingénierie Informatique',
+            position: 'Développeur Cobol/Java',
+            summary: `Maintenance et évolution des applicatifs anti blanchiment du progiciel bancaire SAB<br>
+			Participation à l'élaboration d'un atelier de développement basé sur Eclipse RCP`
+		}
+			
     },
     education: {
-        title: 'Education',
-        item1: {
+        title: 'Diplômes',
+		item1: {
             period: {
-                start: 2011,
-                end: 2013,
+                start: 2018,
+                end: 2019,
             },
-            location: 'Munich, DE',
-            school: 'Munich University of Applied Sciences',
-            degree: 'M.B.A. WebDevelopment',
-            summary: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Quam, incidunt perspiciatis, esse eos asperiores repudiandae
-            porro nulla fugit quidem.`
+            location: 'Rennes',
+            school: 'ISTIC',
+            degree: 'Master Ingénierie logicielle',
+            summary: ``
         },
         item2: {
             period: {
                 start: 2005,
-                end: 2011,
+                end: 2006,
             },
-            location: 'Munich, DE',
-            school: 'Advancement of Science And Art',
-            degree: 'B.Sc. Creative Arts',
-            summary: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Quam, incidunt perspiciatis, esse eos asperiores repudiandae.`
-        }
+            location: 'Vannes',
+            school: 'Université de Bretagne SUD',
+            degree: 'IUT Informatique',
+            summary: `IUT en année spéciale suite à mon BTS électronique`
+        } 
+        
     },
     interests: {
-        title: 'Interests',
+        title: 'Centres d\'intérêts',
         item1: {
-            icon: 'icon--terminal',
-            caption: 'Coding'
+            icon: 'icon--development',
+            caption: 'Développement'
         },
-        item2: {
-            icon: 'icon--game-controller',
-            caption: 'Games'
+		item2: {
+            icon: 'icon--drilling-machine',
+            caption: 'Bricolage'
         },
         item3: {
-            icon: 'icon--compass',
-            caption: 'Hiking'
-        },
-        item4: {
             icon: 'icon--saddle',
-            caption: 'Cycling'
+            caption: 'Sport'
         }
     }
 };

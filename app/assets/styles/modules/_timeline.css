@@ -43,7 +43,7 @@
             }
             
             /* circle */
-            &::after{
+            /*&::after{
                 position: absolute;
                 content: '';
                 left: 0;
@@ -54,11 +54,10 @@
             }
 
             &--short-v-line{
-                /* short vertical line */
                 &::before{
                     height: 60%;
                 }
-            }
+            }*/
         }
         
         &__title{
